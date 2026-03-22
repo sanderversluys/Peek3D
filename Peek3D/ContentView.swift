@@ -7,7 +7,7 @@ struct ContentView: View {
                 .font(.system(size: 64))
                 .foregroundStyle(.secondary)
 
-            Text("3D Quick Look")
+            Text("Peek3D")
                 .font(.largeTitle)
                 .fontWeight(.bold)
 

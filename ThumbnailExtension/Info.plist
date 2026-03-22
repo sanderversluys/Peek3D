@@ -5,7 +5,7 @@
 	<key>CFBundleName</key>
 	<string>ThumbnailExtension</string>
 	<key>CFBundleDisplayName</key>
-	<string>3D Quick Look Thumbnail</string>
+	<string>Peek3D Thumbnail</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleVersion</key>

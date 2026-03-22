@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleName</key>
-	<string>3D Quick Look</string>
+	<string>Peek3D</string>
 	<key>CFBundleDisplayName</key>
-	<string>3D Quick Look</string>
+	<string>Peek3D</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleVersion</key>

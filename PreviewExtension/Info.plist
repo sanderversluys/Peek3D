@@ -5,7 +5,7 @@
 	<key>CFBundleName</key>
 	<string>PreviewExtension</string>
 	<key>CFBundleDisplayName</key>
-	<string>3D Quick Look Preview</string>
+	<string>Peek3D Preview</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleVersion</key>

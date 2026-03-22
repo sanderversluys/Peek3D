@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct ThreeDQuickLookApp: App {
+struct Peek3DApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
