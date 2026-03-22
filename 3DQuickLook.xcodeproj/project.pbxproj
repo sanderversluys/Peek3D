@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1319A088CD40FD1C646D8551 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 67D3158BE73A9E81E8CE9AB8 /* ZIPFoundation */; };
+		1C77FB9A779A0EB07771C926 /* SceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15801BD72DCDE849E03A4A8 /* SceneConfigurator.swift */; };
+		2933F032469597857917EE8D /* ThumbnailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD4D80CC907A5C93FF7669F /* ThumbnailProvider.swift */; };
+		3E250AE859FED23FF4B4A7C0 /* PreviewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3A6CF9BE0D73FB851F46A464 /* PreviewExtension.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46A03B054CCDAF1792079CFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C6147F5C4DE42F4D2C42A1 /* ContentView.swift */; };
+		4BB717D2F1A9EB6700BF746A /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7087F1F766B47852D4F088FF /* PreviewViewController.swift */; };
+		4C50D79EB3EEAC38B668204E /* SceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62BA63CD45F0800ADCE1F96 /* SceneBuilder.swift */; };
+		59191EF717FDCA5BA7FE1300 /* ThreeMFParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A6E6D7D07FE0D77805972 /* ThreeMFParser.swift */; };
+		5E9E72C007AD3A065BF86DCE /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D319A957E4D032D0DF1B7 /* App.swift */; };
+		7273514859DEE906493F5A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC329AE3A910E95B9FE7D3A /* Assets.xcassets */; };
+		76F4F56798C764D3ECCE5435 /* ModelLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7982B9AA2C28B3B6702DCF /* ModelLoader.swift */; };
+		773E08E066CC90883AF0B6E6 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = F9260E79D3D696083A2EEF7F /* ZIPFoundation */; };
+		96DB981528E2512BDBAC46A3 /* ThreeMFParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466A6E6D7D07FE0D77805972 /* ThreeMFParser.swift */; };
+		A99AF4A2674D8843508D66AC /* SceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62BA63CD45F0800ADCE1F96 /* SceneBuilder.swift */; };
+		B536514EFD53F97738E14255 /* SceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15801BD72DCDE849E03A4A8 /* SceneConfigurator.swift */; };
+		C4995DD20DA9694484B542B4 /* ModelLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7982B9AA2C28B3B6702DCF /* ModelLoader.swift */; };
+		CADD1D22289F40A46FC88D23 /* ThreeMFModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C598993AC770737E009BBE /* ThreeMFModel.swift */; };
+		CFD385444B32701CBA4C11E5 /* ThreeMFModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C598993AC770737E009BBE /* ThreeMFModel.swift */; };
+		E6C3451EC36B6C1C011CC47D /* ThumbnailExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C20A83D9B68930EE61EC76D3 /* ThumbnailExtension.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F6D4EAFABC15D66F066DC8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A2DDA0037DDFAF27522EAF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AFA748AE844CEE766E8C39C;
+			remoteInfo = PreviewExtension;
+		};
+		7AED9F9DFC9F13CE755822FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A2DDA0037DDFAF27522EAF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C60499AA0D0F2437A59EF9EE;
+			remoteInfo = ThumbnailExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		33B4BFE7F891B4885D976EA8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3E250AE859FED23FF4B4A7C0 /* PreviewExtension.appex in Embed Foundation Extensions */,
+				E6C3451EC36B6C1C011CC47D /* ThumbnailExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00DA6B26A162BA8883C9CE9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0BD4D80CC907A5C93FF7669F /* ThumbnailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailProvider.swift; sourceTree = "<group>"; };
+		1B7982B9AA2C28B3B6702DCF /* ModelLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLoader.swift; sourceTree = "<group>"; };
+		1DFACA0CF3FCA62A979B903E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3A6CF9BE0D73FB851F46A464 /* PreviewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PreviewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4023CF5B6CD0971223D9DC5D /* PreviewExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PreviewExtension.entitlements; sourceTree = "<group>"; };
+		466A6E6D7D07FE0D77805972 /* ThreeMFParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeMFParser.swift; sourceTree = "<group>"; };
+		5A9ECD3CE67A818C29F302EE /* 3DQuickLook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DQuickLook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B94FD991C1658A894C3A70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5C0CC25538E4A8C01C6E9C4C /* 3DQuickLook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = 3DQuickLook.entitlements; sourceTree = "<group>"; };
+		7087F1F766B47852D4F088FF /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		790D319A957E4D032D0DF1B7 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		C20A83D9B68930EE61EC76D3 /* ThumbnailExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ThumbnailExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C48A8E45EA0996274D6D8DAA /* ThumbnailExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThumbnailExtension.entitlements; sourceTree = "<group>"; };
+		C62BA63CD45F0800ADCE1F96 /* SceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneBuilder.swift; sourceTree = "<group>"; };
+		CBC329AE3A910E95B9FE7D3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E15801BD72DCDE849E03A4A8 /* SceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneConfigurator.swift; sourceTree = "<group>"; };
+		F4C6147F5C4DE42F4D2C42A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F6C598993AC770737E009BBE /* ThreeMFModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeMFModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2911FC73D56C2EF99D7119FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1319A088CD40FD1C646D8551 /* ZIPFoundation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5BDDB0C0030E6F5C753C1E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773E08E066CC90883AF0B6E6 /* ZIPFoundation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11E009156CABCF2CC46F761E /* PreviewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5B94FD991C1658A894C3A70A /* Info.plist */,
+				4023CF5B6CD0971223D9DC5D /* PreviewExtension.entitlements */,
+				7087F1F766B47852D4F088FF /* PreviewViewController.swift */,
+			);
+			path = PreviewExtension;
+			sourceTree = "<group>";
+		};
+		18CCCDC678EE1B925DCAF54D /* ThumbnailExtension */ = {
+			isa = PBXGroup;
+			children = (
+				00DA6B26A162BA8883C9CE9F /* Info.plist */,
+				C48A8E45EA0996274D6D8DAA /* ThumbnailExtension.entitlements */,
+				0BD4D80CC907A5C93FF7669F /* ThumbnailProvider.swift */,
+			);
+			path = ThumbnailExtension;
+			sourceTree = "<group>";
+		};
+		33D760DDAB816A6D34D1DF4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A9ECD3CE67A818C29F302EE /* 3DQuickLook.app */,
+				3A6CF9BE0D73FB851F46A464 /* PreviewExtension.appex */,
+				C20A83D9B68930EE61EC76D3 /* ThumbnailExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F868AA5AC033CAF8143A7E6 = {
+			isa = PBXGroup;
+			children = (
+				8AB318AD596401845215A3C5 /* 3DQuickLook */,
+				11E009156CABCF2CC46F761E /* PreviewExtension */,
+				BD1390A4F6DF172AC572F61F /* Shared */,
+				18CCCDC678EE1B925DCAF54D /* ThumbnailExtension */,
+				33D760DDAB816A6D34D1DF4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AB318AD596401845215A3C5 /* 3DQuickLook */ = {
+			isa = PBXGroup;
+			children = (
+				5C0CC25538E4A8C01C6E9C4C /* 3DQuickLook.entitlements */,
+				790D319A957E4D032D0DF1B7 /* App.swift */,
+				CBC329AE3A910E95B9FE7D3A /* Assets.xcassets */,
+				F4C6147F5C4DE42F4D2C42A1 /* ContentView.swift */,
+				1DFACA0CF3FCA62A979B903E /* Info.plist */,
+			);
+			path = 3DQuickLook;
+			sourceTree = "<group>";
+		};
+		BD1390A4F6DF172AC572F61F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1B7982B9AA2C28B3B6702DCF /* ModelLoader.swift */,
+				C62BA63CD45F0800ADCE1F96 /* SceneBuilder.swift */,
+				E15801BD72DCDE849E03A4A8 /* SceneConfigurator.swift */,
+				F6C598993AC770737E009BBE /* ThreeMFModel.swift */,
+				466A6E6D7D07FE0D77805972 /* ThreeMFParser.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AFA748AE844CEE766E8C39C /* PreviewExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C47BFEF44B4234BC435C9A3 /* Build configuration list for PBXNativeTarget "PreviewExtension" */;
+			buildPhases = (
+				CD6F523E9BCE106736FF0C9E /* Sources */,
+				B5BDDB0C0030E6F5C753C1E9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PreviewExtension;
+			packageProductDependencies = (
+				F9260E79D3D696083A2EEF7F /* ZIPFoundation */,
+			);
+			productName = PreviewExtension;
+			productReference = 3A6CF9BE0D73FB851F46A464 /* PreviewExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		918FA2806D69C6AC3E087CDD /* 3DQuickLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44A0F229C4570376556259C9 /* Build configuration list for PBXNativeTarget "3DQuickLook" */;
+			buildPhases = (
+				18D2C087C460214E21DCE4F8 /* Sources */,
+				589B7FCB02AD57C6F983707B /* Resources */,
+				33B4BFE7F891B4885D976EA8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84735A856836C2FB3FFE69BC /* PBXTargetDependency */,
+				B3D76C04E7929B900B5B2FFE /* PBXTargetDependency */,
+			);
+			name = 3DQuickLook;
+			packageProductDependencies = (
+			);
+			productName = 3DQuickLook;
+			productReference = 5A9ECD3CE67A818C29F302EE /* 3DQuickLook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C60499AA0D0F2437A59EF9EE /* ThumbnailExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C435A6225BBE3DB32E96909F /* Build configuration list for PBXNativeTarget "ThumbnailExtension" */;
+			buildPhases = (
+				D7080A8C666DDC8BDC31EA26 /* Sources */,
+				2911FC73D56C2EF99D7119FE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThumbnailExtension;
+			packageProductDependencies = (
+				67D3158BE73A9E81E8CE9AB8 /* ZIPFoundation */,
+			);
+			productName = ThumbnailExtension;
+			productReference = C20A83D9B68930EE61EC76D3 /* ThumbnailExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A2DDA0037DDFAF27522EAF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = B860815C2EB0B3DBE72BDBF9 /* Build configuration list for PBXProject "3DQuickLook" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3F868AA5AC033CAF8143A7E6;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				53942C3FBBAE6EC578188AA7 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				918FA2806D69C6AC3E087CDD /* 3DQuickLook */,
+				0AFA748AE844CEE766E8C39C /* PreviewExtension */,
+				C60499AA0D0F2437A59EF9EE /* ThumbnailExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		589B7FCB02AD57C6F983707B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7273514859DEE906493F5A15 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18D2C087C460214E21DCE4F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9E72C007AD3A065BF86DCE /* App.swift in Sources */,
+				46A03B054CCDAF1792079CFE /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD6F523E9BCE106736FF0C9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4995DD20DA9694484B542B4 /* ModelLoader.swift in Sources */,
+				4BB717D2F1A9EB6700BF746A /* PreviewViewController.swift in Sources */,
+				A99AF4A2674D8843508D66AC /* SceneBuilder.swift in Sources */,
+				B536514EFD53F97738E14255 /* SceneConfigurator.swift in Sources */,
+				CADD1D22289F40A46FC88D23 /* ThreeMFModel.swift in Sources */,
+				59191EF717FDCA5BA7FE1300 /* ThreeMFParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7080A8C666DDC8BDC31EA26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F4F56798C764D3ECCE5435 /* ModelLoader.swift in Sources */,
+				4C50D79EB3EEAC38B668204E /* SceneBuilder.swift in Sources */,
+				1C77FB9A779A0EB07771C926 /* SceneConfigurator.swift in Sources */,
+				CFD385444B32701CBA4C11E5 /* ThreeMFModel.swift in Sources */,
+				96DB981528E2512BDBAC46A3 /* ThreeMFParser.swift in Sources */,
+				2933F032469597857917EE8D /* ThumbnailProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84735A856836C2FB3FFE69BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AFA748AE844CEE766E8C39C /* PreviewExtension */;
+			targetProxy = 3F6D4EAFABC15D66F066DC8B /* PBXContainerItemProxy */;
+		};
+		B3D76C04E7929B900B5B2FFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C60499AA0D0F2437A59EF9EE /* ThumbnailExtension */;
+			targetProxy = 7AED9F9DFC9F13CE755822FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2D36C4AA8D704E867D441B91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = 3DQuickLook/3DQuickLook.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = 3DQuickLook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanderv.3DQuickLook;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7ED15FE1848D02012F6B8511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5;
+			};
+			name = Release;
+		};
+		93DCE7153A20D174A056A69B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ThumbnailExtension/ThumbnailExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ThumbnailExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanderv.3DQuickLook.ThumbnailExtension;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		94036AE5F1D1E1F2ACC29E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ThumbnailExtension/ThumbnailExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ThumbnailExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanderv.3DQuickLook.ThumbnailExtension;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9D193C4F3A3DA0E96CE1B17A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = 3DQuickLook/3DQuickLook.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = 3DQuickLook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanderv.3DQuickLook;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9E25883C3876E44FEE4CE4F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PreviewExtension/PreviewExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PreviewExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanderv.3DQuickLook.PreviewExtension;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CEE5D738464E469A5D3FA950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5;
+			};
+			name = Debug;
+		};
+		EE767D96EB77AFF7A6D96902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PreviewExtension/PreviewExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PreviewExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanderv.3DQuickLook.PreviewExtension;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44A0F229C4570376556259C9 /* Build configuration list for PBXNativeTarget "3DQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D193C4F3A3DA0E96CE1B17A /* Debug */,
+				2D36C4AA8D704E867D441B91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8C47BFEF44B4234BC435C9A3 /* Build configuration list for PBXNativeTarget "PreviewExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E25883C3876E44FEE4CE4F6 /* Debug */,
+				EE767D96EB77AFF7A6D96902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B860815C2EB0B3DBE72BDBF9 /* Build configuration list for PBXProject "3DQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE5D738464E469A5D3FA950 /* Debug */,
+				7ED15FE1848D02012F6B8511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C435A6225BBE3DB32E96909F /* Build configuration list for PBXNativeTarget "ThumbnailExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94036AE5F1D1E1F2ACC29E83 /* Debug */,
+				93DCE7153A20D174A056A69B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		53942C3FBBAE6EC578188AA7 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.19;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		67D3158BE73A9E81E8CE9AB8 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53942C3FBBAE6EC578188AA7 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		F9260E79D3D696083A2EEF7F /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53942C3FBBAE6EC578188AA7 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9A2DDA0037DDFAF27522EAF8 /* Project object */;
+}

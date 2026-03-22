@@ -1,0 +1,64 @@
+name: 3DQuickLook
+options:
+  bundleIdPrefix: com.sanderv
+  deploymentTarget:
+    macOS: "15.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+
+packages:
+  ZIPFoundation:
+    url: https://github.com/weichsel/ZIPFoundation
+    from: "0.9.19"
+
+settings:
+  base:
+    SWIFT_VERSION: "5"
+    MACOSX_DEPLOYMENT_TARGET: "15.0"
+
+targets:
+  3DQuickLook:
+    type: application
+    platform: macOS
+    sources:
+      - path: 3DQuickLook
+    dependencies:
+      - target: PreviewExtension
+        embed: true
+        codeSign: true
+      - target: ThumbnailExtension
+        embed: true
+        codeSign: true
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.sanderv.3DQuickLook
+      GENERATE_INFOPLIST_FILE: false
+      INFOPLIST_FILE: 3DQuickLook/Info.plist
+      CODE_SIGN_ENTITLEMENTS: 3DQuickLook/3DQuickLook.entitlements
+
+  PreviewExtension:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: PreviewExtension
+      - path: Shared
+    dependencies:
+      - package: ZIPFoundation
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.sanderv.3DQuickLook.PreviewExtension
+      GENERATE_INFOPLIST_FILE: false
+      INFOPLIST_FILE: PreviewExtension/Info.plist
+      CODE_SIGN_ENTITLEMENTS: PreviewExtension/PreviewExtension.entitlements
+
+  ThumbnailExtension:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: ThumbnailExtension
+      - path: Shared
+    dependencies:
+      - package: ZIPFoundation
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.sanderv.3DQuickLook.ThumbnailExtension
+      GENERATE_INFOPLIST_FILE: false
+      INFOPLIST_FILE: ThumbnailExtension/Info.plist
+      CODE_SIGN_ENTITLEMENTS: ThumbnailExtension/ThumbnailExtension.entitlements
