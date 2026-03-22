@@ -18,6 +18,7 @@ settings:
     DEVELOPMENT_TEAM: T8CL6FL5T7
     CODE_SIGN_IDENTITY: "Developer ID Application"
     CODE_SIGN_STYLE: Manual
+    ENABLE_HARDENED_RUNTIME: YES
 
 targets:
   Peek3D:
