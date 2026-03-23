@@ -28,8 +28,6 @@
 		<dict>
 			<key>QLSupportedContentTypes</key>
 			<array>
-				<string>public.standard-tesselated-geometry-format</string>
-				<string>public.geometry-definition-format</string>
 				<string>com.microsoft.3dmanufacturing</string>
 			</array>
 			<key>QLSupportsSearchableItems</key>
