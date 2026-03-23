@@ -73,27 +73,41 @@ enum SceneBuilder {
         return node
     }
 
+    /// Max triangles before we skip smooth normals and use stride-based decimation
+    private static let normalThreshold = 500_000
+    private static let maxTriangles = 2_000_000
+
     private static func buildGeometry(from mesh: ThreeMFMesh) -> SCNGeometry {
-        let vertices = mesh.vertices
-        let triangles = mesh.triangles
+        var vertices = mesh.vertices
+        var triangles = mesh.triangles
         let vertexCount = vertices.count
 
-        // Compute per-vertex normals (average of adjacent face normals)
-        var normals = [SIMD3<Float>](repeating: .zero, count: vertexCount)
-        for (i0, i1, i2) in triangles {
-            guard i0 < vertexCount, i1 < vertexCount, i2 < vertexCount else { continue }
-            let p0 = vertices[i0]
-            let p1 = vertices[i1]
-            let p2 = vertices[i2]
-            let faceNormal = cross(p1 - p0, p2 - p0)
-            let len = length(faceNormal)
-            guard len > 1e-10 else { continue }
-            let n = faceNormal / len
-            normals[i0] += n
-            normals[i1] += n
-            normals[i2] += n
+        // Decimate very large meshes by taking every Nth triangle
+        if triangles.count > maxTriangles {
+            let stride = (triangles.count + maxTriangles - 1) / maxTriangles
+            triangles = (0..<triangles.count).compactMap { $0 % stride == 0 ? triangles[$0] : nil }
         }
-        normals = normals.map { length($0) > 1e-10 ? normalize($0) : SIMD3(0, 1, 0) }
+
+        // Compute per-vertex normals (skip for very large meshes — use flat shading)
+        let useSmooth = triangles.count <= normalThreshold
+        var normals = [SIMD3<Float>](repeating: SIMD3(0, 1, 0), count: vertexCount)
+        if useSmooth {
+            normals = [SIMD3<Float>](repeating: .zero, count: vertexCount)
+            for (i0, i1, i2) in triangles {
+                guard i0 < vertexCount, i1 < vertexCount, i2 < vertexCount else { continue }
+                let p0 = vertices[i0]
+                let p1 = vertices[i1]
+                let p2 = vertices[i2]
+                let faceNormal = cross(p1 - p0, p2 - p0)
+                let len = length(faceNormal)
+                guard len > 1e-10 else { continue }
+                let n = faceNormal / len
+                normals[i0] += n
+                normals[i1] += n
+                normals[i2] += n
+            }
+            normals = normals.map { length($0) > 1e-10 ? normalize($0) : SIMD3(0, 1, 0) }
+        }
 
         // Geometry sources
         let scnVertices = vertices.map { SCNVector3($0.x, $0.y, $0.z) }
