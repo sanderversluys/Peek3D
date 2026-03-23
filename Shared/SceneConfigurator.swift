@@ -23,6 +23,31 @@ enum SceneConfigurator {
 
     // MARK: - Private
 
+    /// Add a slow turntable rotation to the model. Pauses when the user interacts.
+    static func addRotation(to scene: SCNScene) {
+        let (center, _) = boundingSphere(of: scene.rootNode)
+
+        // Wrap all geometry in a pivot node that rotates around the model center
+        let pivotNode = SCNNode()
+        pivotNode.simdPosition = center
+        pivotNode.name = "turntable"
+
+        let children = scene.rootNode.childNodes.filter {
+            $0.camera == nil && $0.light == nil
+        }
+        for child in children {
+            child.removeFromParentNode()
+            child.simdPosition -= center
+            pivotNode.addChildNode(child)
+        }
+        scene.rootNode.addChildNode(pivotNode)
+
+        let rotation = SCNAction.repeatForever(
+            SCNAction.rotateBy(x: 0, y: .pi * 2, z: 0, duration: 20)
+        )
+        pivotNode.runAction(rotation, forKey: "turntable")
+    }
+
     static func addCameraAndLights(to scene: SCNScene) {
         let (center, radius) = boundingSphere(of: scene.rootNode)
 

@@ -20,6 +20,8 @@ class PreviewViewController: NSViewController, QLPreviewingController {
                 let scene = try ModelLoader.loadModel(from: url)
                 DispatchQueue.main.async {
                     SceneConfigurator.configure(self.scnView, with: scene)
+                    SceneConfigurator.addRotation(to: scene)
+                    self.scnView.isPlaying = true
                     handler(nil)
                 }
             } catch {

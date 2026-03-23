@@ -19,6 +19,9 @@ Packages/
 Package.pins
 Package.resolved
 
+# Provisioning profiles
+profiles/
+
 # macOS
 .DS_Store
 *.swp
